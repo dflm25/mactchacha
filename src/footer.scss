@@ -1,0 +1,62 @@
+@import './colors.scss';
+
+footer {
+  position: relative;
+  color: $navajo-white;
+  box-sizing: border-box;
+
+  .shape-footer-container {
+    // background: $salmon-color;
+    width: 100%;
+    position: relative;
+    height: 100px;
+    background: $dark-green-color;
+
+    .custom-shape-divider-bottom-1691244648 {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: -125px;
+    }
+
+    .custom-shape-divider-bottom-1691244648 svg {
+      position: relative;
+      display: block;
+      width: calc(300% + 1.3px);
+      height: 150px;
+    }
+
+    .custom-shape-divider-bottom-1691244648 .shape-fill {
+      fill: #00362d;
+    }
+  }
+
+  .footer-column-content {
+    background: $dark-green-color;
+    padding: 10px 116px 150px 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 22px;
+    }
+    .elementor-social-icons-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      a {
+        color: $navajo-white;
+        margin-right: 32px;
+        i {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

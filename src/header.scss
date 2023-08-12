@@ -1,0 +1,88 @@
+@import './colors.scss';
+@import './breakpoints.scss';
+@import './typography.scss';
+
+.scroll-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 38px;
+  background: transparent;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .logo-top {
+      width: 161px;
+    }
+
+    .hamburguer-icon {
+      display: none;
+      img {
+        cursor: pointer;
+        width: 25px;
+        margin-top: 8px;
+      }
+
+      @media (max-width: $desktop-min) {
+        display: inline-block;
+      }
+    }
+
+    .top-menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      list-style: none;
+      margin-top: 8px;
+
+      @media (max-width: $desktop-min) {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        background-color: $dark-green-color;
+        left: 0;
+        bottom: 0;
+        display: none;
+      }
+
+      li {
+        margin-right: 20px;
+        height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 1;
+
+        a {
+          letter-spacing: 5.12px;
+          font-family: $title-font;
+          text-decoration: none;
+          color: $dark-green-color;
+
+          &:hover {
+            color: $soft-green-color;
+            border-bottom: 2px $soft-green-color solid;
+          }
+        }
+      }
+    }
+
+    .icons-top {
+      img {
+        cursor: pointer;
+        width: 25px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
