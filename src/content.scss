@@ -51,4 +51,130 @@ body {
       scale: 1.3;
     }
   }
+
+  .section-hablemos {
+    background: $salmon-color;
+    padding: 50px 0px;
+    position: relative;
+
+    .hablemos-description {
+      color: $dark-green-color;
+      text-transform: uppercase;
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      margin-left: 12px;
+    }
+
+    .hablemos-img {
+      width: 100%;
+      max-width: 720px;
+    }
+
+    .normal-title {
+      margin-top: 100px;
+      position: relative;
+      font-size: 28px;
+
+      &:after {
+        content: ' ';
+        height: 2px;
+        width: 80%;
+        background: $dark-green-color;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+    }
+
+    .big-title-luckybones {
+      margin: 0;
+      font-size: 170px;
+      color: $navajo-white;
+      font-weight: 600;
+      letter-spacing: 0px;
+      line-height: 1em;
+      text-shadow: 5px 0px 0px rgba(0, 54, 45, 1);
+
+      @media (max-width: $desktop-min) {
+        display: inline-block;
+        font-size: 130px;
+      }
+    }
+
+    .btn-contacto {
+      font-family: 'Pathway Ghotic One', Sans-serif;
+      letter-spacing: 4px;
+      fill: $navajo-white;
+      color: $navajo-white;
+      background-color: $dark-green-color;
+      border-style: solid;
+      border-width: 2px 2px 2px 2px;
+      border-color: $navajo-white;
+      border-radius: 30px 30px 30px 30px;
+      padding: 8px 45px 8px 45px;
+    }
+  }
+
+  .section-feed {
+    background: $salmon-color;
+    padding: 50px 0px 50px 0px;
+    margin-bottom: 10px;
+
+    .hr-lines {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      color: $navajo-white;
+    }
+
+    .hr-lines:before {
+      content: ' ';
+      height: 2px;
+      width: 45%;
+      background: $navajo-white;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+
+    .hr-lines:after {
+      content: ' ';
+      height: 2px;
+      width: 45%;
+      background: $navajo-white;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+
+    .section-hablemos-svg-content {
+      position: relative;
+    }
+  }
+
+  .custom-shape-divider-bottom-1691244648 {
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -125px;
+  }
+
+  .custom-shape-divider-bottom-1691244648 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+  }
+
+  .custom-shape-divider-bottom-1691244648 .shape-fill {
+    fill: $salmon-color;
+  }
 }
