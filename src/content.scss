@@ -23,25 +23,25 @@ body {
   background: $navajo-white;
 
   .section-beneficios {
-    background-image: url(../src//img/Imagen-central-beneficios.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-
     .beneficios-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
 
-      .beneficio-item {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      .beneficio-item-option {
+        display: grid;
+        grid-template-columns: repeat(2, 0.6fr);
+        img {
+          width: 150px;
+        }
 
-        .beneficio-item-option {
-          display: grid;
-          .beneficio-item-option-content {
+        .beneficio-item-option-content {
+          h4 {
+            font-size: 52px;
+          }
+          h5 {
+            font-size: 20px;
+            font-weight: bold;
           }
         }
       }
