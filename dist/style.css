@@ -3917,6 +3917,41 @@ body .custom-shape-divider-bottom-1691244648 svg {
 body .custom-shape-divider-bottom-1691244648 .shape-fill {
   fill: #f77872;
 }
+body .taza {
+  position: relative;
+  height: 1600px;
+  background-image: url(../src/img/taza.png);
+  background-repeat: no-repeat;
+  background-position: -262px 20px;
+  background-size: 150%;
+}
+body .taza .taza-2 {
+  position: absolute;
+  left: 15%;
+  top: -30px;
+  width: 320px;
+}
+body .taza .taza-1 {
+  position: absolute;
+  left: 15%;
+  width: 540px;
+  z-index: 3;
+  top: 134px;
+}
+body .taza .taza-3 {
+  position: absolute;
+  right: 30%;
+  width: 480px;
+  z-index: 4;
+  top: 70px;
+}
+body .taza .taza-4 {
+  position: absolute;
+  right: 0px;
+  width: 900px;
+  z-index: 4;
+  top: -80px;
+}
 
 footer {
   position: relative;

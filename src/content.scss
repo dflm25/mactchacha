@@ -177,4 +177,44 @@ body {
   .custom-shape-divider-bottom-1691244648 .shape-fill {
     fill: $salmon-color;
   }
+
+  .taza {
+    position: relative;
+    height: 1600px;
+    background-image: url(../src/img/taza.png);
+    background-repeat: no-repeat;
+    background-position: -262px 20px;
+    background-size: 150%;
+
+    .taza-2 {
+      position: absolute;
+      left: 15%;
+      top: -30px;
+      width: 320px;
+    }
+
+    .taza-1 {
+      position: absolute;
+      left: 15%;
+      width: 540px;
+      z-index: 3;
+      top: 134px;
+    }
+
+    .taza-3 {
+      position: absolute;
+      right: 30%;
+      width: 480px;
+      z-index: 4;
+      top: 70px;
+    }
+
+    .taza-4 {
+      position: absolute;
+      right: 0px;
+      width: 900px;
+      z-index: 4;
+      top: -80px;
+    }
+  }
 }
