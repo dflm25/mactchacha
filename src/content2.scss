@@ -1,0 +1,186 @@
+$--unnamed-character-spacing-5-12: 5.12px;
+
+.banner-1 {
+    position: absolute;
+    right: -55px;
+    background: transparent url('../src/img/banner-1.png') 0% 0% no-repeat padding-box;
+    height: 60vw;
+    width: 170px;
+}
+.section-carousel-header {
+    top: 0px;
+    width: 100%;
+    height: 110px;
+}
+.mactcha-menu {
+    top: 24px;
+    left: 39px;
+    height: 58px;
+}
+.logo-mactcha {
+    top: 54px;
+    left: 39px;
+    width: 135px;
+    height: 40px;
+}
+.mactcha-barra-menu {
+    margin-left: 348px;
+    height: 30px;
+    text-align: center;
+    // width: 100%;
+    left: 0;
+    top: 20px;
+    position: absolute;
+
+    ul > li {
+        margin: 0 15px;
+        padding-top: 0px;
+        height: 38px;
+    }
+
+    ul > li > a {
+        height: 28px;
+        letter-spacing: $--unnamed-character-spacing-5-12;
+        color: $dark-green-color;
+        text-align: center;
+        font: normal normal normal 12px/18px Pathway Extreme;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    ul > li.active {
+        color: $soft-green-color;
+        border-bottom: 2px solid $soft-green-color;
+
+        a { color: $soft-green-color;}
+    }
+
+    ul > li:hover {
+        border-bottom: 2px solid $dark-green-color;
+    }
+
+}
+
+.icons-rg {
+    right: 105px;
+    position: absolute;
+    top: 20px;
+
+    .buscar {
+        width: 244px;
+        left: -290px;
+        display: inline-block;
+        height: 33px;
+        border: 2px solid $dark-green-color;
+        border: 2px solid #00362D;
+        border-radius: 21px;
+        top: -3px;
+        position: absolute;
+
+        input {
+            border: 0px;
+            background-color: transparent;
+            left: 0px;
+            height: 30px;
+            position: absolute;
+            width: 100%;
+            padding-left: 20px;
+            text-transform: uppercase;
+            font: normal normal normal 14px/20px Pathway Extreme;
+        }
+    }
+
+    .space {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .carrito {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .log-in {
+        width: 25px;
+        height: 23px;
+        cursor: pointer;
+    }
+}
+
+.section-carousel {
+    padding: 0 20px;
+    width: 100%;
+    height: 700px;
+
+    .title {
+        left: 371px;
+        width: 393px;
+        height: 26px;
+        color: $dark-green-color;
+        text-align: left;
+        font: normal normal normal 18px/26px Pathway Extreme;
+        letter-spacing: 9.1px;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 50px;
+    }
+    .title-2 {
+        top: 80px;
+        left: 156px;
+        height: 345px;
+        color: $light-green-color;
+        text-align: left;
+        font: normal normal bold 255px/303px Luckybones;
+        letter-spacing: 0px;
+        position: absolute;
+        -webkit-text-stroke: 3px $dark-green-color;
+        text-shadow: 8px 8px 0px $dark-green-color;
+    }
+    .line-rev {
+        position: absolute;
+        border: 0.8px solid $dark-green-color;
+        height: 1px;
+        top: 172px;
+    }
+    .line-rev-1 {
+        width: 14%;
+        left: 761px;
+    }
+
+    .line-rev-2 {
+        width: 25px;
+        left: 1095px;
+    }
+
+    .line-rev-3 {
+        width: 150px;
+        left: 1200px;
+    }
+
+    .sub-title-1 {
+        top: 371px;
+        left: 761px;    
+        width: 52px;
+        height: 35px;
+        color: $dark-green-color;
+        text-align: left;
+        font: normal normal normal 20px/30px Pathway Extreme;
+        letter-spacing: 8.75px;
+        text-transform: uppercase;
+        position: absolute;
+        border-bottom: 2px solid $dark-green-color;
+    }
+
+    .sub-title-2 {
+        top: 287px;
+        left: 833px;
+        width: 706px;
+        height: 153px;
+        color: $dark-green-color;
+        text-align: left;
+        font: normal normal 600 101px/156px Pathway Extreme;
+        letter-spacing: 19.5px;
+        text-transform: uppercase;
+        position: absolute;
+    }
+}

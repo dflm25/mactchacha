@@ -6,6 +6,7 @@
 * Copyright (c) 2020 Animate.css
 */
 @import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500&display=swap");
 :root {
   --animate-duration:1s;
   --animate-delay:1s;
@@ -3684,6 +3685,12 @@
   animation-name: slideOutUp;
 }
 
+@font-face {
+  font-family: "Luckybones";
+  src: url("../src/fonts/luckybones-bold-webfont.woff2") format("woff2"), url("../src/fonts/luckybones-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .scroll-header {
   width: 100%;
   position: fixed;
@@ -3761,6 +3768,12 @@
   margin-top: 8px;
 }
 
+@font-face {
+  font-family: "Luckybones";
+  src: url("../src/fonts/luckybones-bold-webfont.woff2") format("woff2"), url("../src/fonts/luckybones-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 *::before,
 *::after {
@@ -3838,6 +3851,7 @@ body .section-hablemos .normal-title:after {
   right: 0;
 }
 body .section-hablemos .big-title-luckybones {
+  font: normal normal bold 255px/303px Luckybones;
   margin: 0;
   font-size: 170px;
   color: #fbf8ec;
@@ -3922,35 +3936,202 @@ body .taza {
   height: 1600px;
   background-image: url(../src/img/taza.png);
   background-repeat: no-repeat;
-  background-position: -262px 20px;
-  background-size: 150%;
+  background-position: -200px 20px;
+  background-size: 140%;
 }
-body .taza .taza-2 {
-  position: absolute;
-  left: 15%;
-  top: -30px;
-  width: 320px;
+body .taza .cabeza-taza p {
+  color: #00362d;
+  font-family: "Pathway Extreme", Sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
 }
-body .taza .taza-1 {
-  position: absolute;
-  left: 15%;
-  width: 540px;
-  z-index: 3;
-  top: 134px;
+body .taza .cabeza-taza h2 {
+  color: #24a035;
+  font-family: "Luckybones", Sans-serif;
+  font-size: 115px;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+  text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.99);
 }
-body .taza .taza-3 {
+
+.banner-1 {
   position: absolute;
-  right: 30%;
-  width: 480px;
-  z-index: 4;
-  top: 70px;
+  right: -55px;
+  background: transparent url("../src/img/banner-1.png") 0% 0% no-repeat padding-box;
+  height: 60vw;
+  width: 170px;
 }
-body .taza .taza-4 {
+
+.section-carousel-header {
+  top: 0px;
+  width: 100%;
+  height: 110px;
+}
+
+.mactcha-menu {
+  top: 24px;
+  left: 39px;
+  height: 58px;
+}
+
+.logo-mactcha {
+  top: 54px;
+  left: 39px;
+  width: 135px;
+  height: 40px;
+}
+
+.mactcha-barra-menu {
+  margin-left: 348px;
+  height: 30px;
+  text-align: center;
+  left: 0;
+  top: 20px;
   position: absolute;
-  right: 0px;
-  width: 900px;
-  z-index: 4;
-  top: -80px;
+}
+.mactcha-barra-menu ul > li {
+  margin: 0 15px;
+  padding-top: 0px;
+  height: 38px;
+}
+.mactcha-barra-menu ul > li > a {
+  height: 28px;
+  letter-spacing: 5.12px;
+  color: #00362d;
+  text-align: center;
+  font: normal normal normal 12px/18px Pathway Extreme;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.mactcha-barra-menu ul > li.active {
+  color: #24a035;
+  border-bottom: 2px solid #24a035;
+}
+.mactcha-barra-menu ul > li.active a {
+  color: #24a035;
+}
+.mactcha-barra-menu ul > li:hover {
+  border-bottom: 2px solid #00362d;
+}
+
+.icons-rg {
+  right: 105px;
+  position: absolute;
+  top: 20px;
+}
+.icons-rg .buscar {
+  width: 244px;
+  left: -290px;
+  display: inline-block;
+  height: 33px;
+  border: 2px solid #00362d;
+  border: 2px solid #00362D;
+  border-radius: 21px;
+  top: -3px;
+  position: absolute;
+}
+.icons-rg .buscar input {
+  border: 0px;
+  background-color: transparent;
+  left: 0px;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font: normal normal normal 14px/20px Pathway Extreme;
+}
+.icons-rg .space {
+  display: inline-block;
+  margin-right: 20px;
+}
+.icons-rg .carrito {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.icons-rg .log-in {
+  width: 25px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.section-carousel {
+  padding: 0 20px;
+  width: 100%;
+  height: 700px;
+}
+.section-carousel .title {
+  left: 371px;
+  width: 393px;
+  height: 26px;
+  color: #00362d;
+  text-align: left;
+  font: normal normal normal 18px/26px Pathway Extreme;
+  letter-spacing: 9.1px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 50px;
+}
+.section-carousel .title-2 {
+  top: 80px;
+  left: 156px;
+  height: 345px;
+  color: #bcea4b;
+  text-align: left;
+  font: normal normal bold 255px/303px Luckybones;
+  letter-spacing: 0px;
+  position: absolute;
+  -webkit-text-stroke: 3px #00362d;
+  text-shadow: 8px 8px 0px #00362d;
+}
+.section-carousel .line-rev {
+  position: absolute;
+  border: 0.8px solid #00362d;
+  height: 1px;
+  top: 172px;
+}
+.section-carousel .line-rev-1 {
+  width: 14%;
+  left: 761px;
+}
+.section-carousel .line-rev-2 {
+  width: 25px;
+  left: 1095px;
+}
+.section-carousel .line-rev-3 {
+  width: 150px;
+  left: 1200px;
+}
+.section-carousel .sub-title-1 {
+  top: 371px;
+  left: 761px;
+  width: 52px;
+  height: 35px;
+  color: #00362d;
+  text-align: left;
+  font: normal normal normal 20px/30px Pathway Extreme;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+  position: absolute;
+  border-bottom: 2px solid #00362d;
+}
+.section-carousel .sub-title-2 {
+  top: 287px;
+  left: 833px;
+  width: 706px;
+  height: 153px;
+  color: #00362d;
+  text-align: left;
+  font: normal normal 600 101px/156px Pathway Extreme;
+  letter-spacing: 19.5px;
+  text-transform: uppercase;
+  position: absolute;
 }
 
 footer {

@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import './_breakpoints.scss';
+@import './typography.scss';
 
 *,
 *::before,
@@ -89,6 +90,7 @@ body {
     }
 
     .big-title-luckybones {
+      font: normal normal bold 255px/303px Luckybones;
       margin: 0;
       font-size: 170px;
       color: $navajo-white;
@@ -183,38 +185,29 @@ body {
     height: 1600px;
     background-image: url(../src/img/taza.png);
     background-repeat: no-repeat;
-    background-position: -262px 20px;
-    background-size: 150%;
+    background-position: -200px 20px;
+    background-size: 140%;
 
-    .taza-2 {
-      position: absolute;
-      left: 15%;
-      top: -30px;
-      width: 320px;
-    }
-
-    .taza-1 {
-      position: absolute;
-      left: 15%;
-      width: 540px;
-      z-index: 3;
-      top: 134px;
-    }
-
-    .taza-3 {
-      position: absolute;
-      right: 30%;
-      width: 480px;
-      z-index: 4;
-      top: 70px;
-    }
-
-    .taza-4 {
-      position: absolute;
-      right: 0px;
-      width: 900px;
-      z-index: 4;
-      top: -80px;
+    .cabeza-taza {
+      p {
+        color: #00362d;
+        font-family: 'Pathway Extreme', Sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        letter-spacing: 0.3em;
+        -webkit-text-stroke-color: #000;
+        stroke: #000;
+      }
+      h2 {
+        color: #24a035;
+        font-family: 'Luckybones', Sans-serif;
+        font-size: 115px;
+        -webkit-text-stroke-width: 1px;
+        stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+        stroke: #000;
+        text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.99);
+      }
     }
   }
 }
